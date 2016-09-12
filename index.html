@@ -2,6 +2,12 @@
 <html>
 <head>
   <link href="https://styleguide.brainly.com/58.2.0/style-guide.css" rel="stylesheet"/>
+  <link href="spinkit.css" rel="stylesheet"/>
+  <style>
+    .js-hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -14,6 +20,7 @@
       <div class="sg-layout__content">
         <p class="sg-text">Type usernames here</p>
         <div class="sg-content-box">
+          <form class="js-form">
           <input type="text" class="sg-input sg-input--spaced-bottom js-username" placeholder="Type first username">
           <br />
           <input type="text" class="sg-input sg-input--spaced-bottom js-username" placeholder="Type second username">
@@ -26,10 +33,16 @@
               </svg>
             </div>
           </button>
+          </form>
         </div>
       </div>
       <div class="sg-layout__content sg-layout__aside-content">
 
+        <div class="spinner js-spinner js-hidden">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
         <div class="js-list">
 
         </div>
